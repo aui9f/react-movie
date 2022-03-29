@@ -1,24 +1,26 @@
-const { useState, useEffect } = require("react")
+import { useEffect, useState } from "react";
 
 function App(){
-  const [loading, setLoading] = useState(true);
-  const [coins, setCoins] = useState([])
+  const [isLoading, setLoading] = useState(true)
+  const [movies, setMovies] = useState([]);
+
+  const getMovies = async () => {
+    const json = await (
+      await (await fetch('https://yts.mx/api/v2/list_movies.json'))
+    ).json();
+    setMovies(json.data.movies);
+    setLoading(false);
+  }
+  
   useEffect(()=>{
-    fetch('https://api.coinpaprika.com/v1/tickers').then(res=>res.json()).then(json=>{
-      console.log('[json]', json)
-      setCoins(json);
-      setLoading(false);
-    })
-  }, [])
+    getMovies();
+  }, []);
   return (
+    
     <div>
-      <h1>The Coins!</h1>
-      {loading?<strong>Loading</strong>:null}
-      <ul>
-        {coins.map(coin=><li>{coin.name} ({coin.symbol}): {coin.quotes.USD.price} USD</li>)}
-      </ul>
+      {isLoading?<p>Loading..</p> :<ul>{movies.map(movie=><li key={movie.id}><h2>{movie.title}</h2><p>{movie.summary}</p></li>)}</ul>}
     </div>
   )
 }
-//https://api.coinpaprika.com/v1/tickers
+
 export default App
