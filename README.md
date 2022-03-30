@@ -7,7 +7,7 @@
 - Movie.js
 - PropTypes
 
-### 페이지 이동2123
+### 페이지 이동21231111
 
 - router
 - npm i react-router-dom@5.3.0
