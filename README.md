@@ -8,3 +8,11 @@
 - PropTypes
 
 ### 페이지 이동
+
+- router
+- npm i react-router-dom@5.3.0
+- parameter
+
+### Site
+
+https://nomadcoders.co/react-for-beginners/lectures/3290
