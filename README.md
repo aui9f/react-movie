@@ -18,3 +18,9 @@
 https://nomadcoders.co/react-for-beginners/lectures/3290
 
 ### Publishing
+
+### build
+
+- npm i gh-pages
+- npm run build
+  -- dist
