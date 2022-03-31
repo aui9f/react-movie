@@ -7,7 +7,7 @@
 - Movie.js
 - PropTypes
 
-### 페이지 이동21231111
+### 페이지 이동123
 
 - router
 - npm i react-router-dom@5.3.0
@@ -16,3 +16,5 @@
 ### Site
 
 https://nomadcoders.co/react-for-beginners/lectures/3290
+
+### Publishing
