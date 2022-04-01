@@ -25,3 +25,4 @@ https://nomadcoders.co/react-for-beginners/lectures/3290
   -- 에러 나서 https 로 변경
 - npm run build
   -- dist
+- https://aui9f.github.io/react-movie
