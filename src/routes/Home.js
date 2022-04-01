@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Movie from '../components/Movie';
+import style from './Home.module.css'
 function Home(){
   const [isLoading, setLoading] = useState(true)
   const [movies, setMovies] = useState([]);
@@ -23,7 +24,7 @@ function Home(){
       ?
        <p>Loading..</p> 
       :
-      <ul>{movies.map(movie=>
+      <ul className={style.list}>{movies.map(movie=>
         <Movie 
           key={movie.id}
           medium_cover_image={movie.medium_cover_image}

@@ -22,5 +22,6 @@ https://nomadcoders.co/react-for-beginners/lectures/3290
 ### build
 
 - npm i gh-pages
+  -- 에러 나서 https 로 변경
 - npm run build
   -- dist
