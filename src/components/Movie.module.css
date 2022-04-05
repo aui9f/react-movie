@@ -6,55 +6,41 @@
 }
 
 li{
+    
     padding: 8px;
-    list-style: none;
-    width: 20%;
 }
+a { text-decoration: none; outline: none; color: black}
 
-li >div{
-    /* min-height: 718px; */
-    border: 1px solid lightgray;
+a:hover, a:active {text-decoration: none; }
+
+
+li>a>div{
+    width: 212px;
+    height: 391px;
+}
+.poster{
+    width: 212px;
+    height: 306px;
     border-radius: 8px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
-li >div >img{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    width: 100%;
+.information{
+    padding: 2px 4px;
 }
-li >div >div{
-    padding: 8px;
-}
-li >div >div >p{
-    margin-bottom: 8px;
-    color: black;
+
+h4{
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+    font-weight: 400;
     letter-spacing: -1px;
-    
-    font-weight: bold;
 }
 
-li >div >div >small{
+p{
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
-li >div >button{
-    padding: 8px 24px;
-    margin: auto;
-    background-color: brown;
-    border: 0;
-    border-radius: 8px;
-    margin-bottom: 12px;
-}
-li >div >button >a{
-    text-decoration: none;
-    color: #FFFFFF;
-    
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 80%;
+  letter-spacing: -1px;
+  color: gray;
 }
