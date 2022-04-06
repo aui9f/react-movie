@@ -25,7 +25,7 @@ class Home extends Component {
     const { isLoading, movies } = this.state;
     return (
       <div>
-       {isLoading?<p>Loading..</p> : <div><ul>
+       {isLoading?<p>Loading..</p> : <div className='style.list'><ul>
          {movies.map(movie=>{
          return <Movie 
           key={movie.id} 

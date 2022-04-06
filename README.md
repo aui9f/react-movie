@@ -30,4 +30,4 @@ https://nomadcoders.co/react-for-beginners/lectures/3290
 ### 2022.04.05 -- 네이버 영화 참고
 
 - 영화 리스트 출력
-- TODO: 디테일 스타일 추가
+- 디테일 스타일 추가
